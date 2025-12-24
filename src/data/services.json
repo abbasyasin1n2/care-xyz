@@ -1,0 +1,135 @@
+[
+  {
+    "id": "1",
+    "name": "Home Nursing Service",
+    "slug": "home-nursing-service",
+    "description": "We offer nursing care services for managing chronic diseases and patients requiring specialized nursing attention. Our personalized care plans support conditions like diabetes, hypertension, and heart disease, ensuring continuous, compassionate care aimed at improving the patient's quality of life.",
+    "image": "https://i.ibb.co.com/zHs88VJs/thumb-home-nursing-services5031.jpg",
+    "category": "Elderly Care",
+    "pricePerDay": 1200,
+    "pricePerHour": 150,
+    "features": [
+      "24/7 Professional nursing care",
+      "Chronic disease management",
+      "Medication administration",
+      "Vital signs monitoring",
+      "Personalized care plans",
+      "Compassionate and experienced nurses"
+    ],
+    "status": "active"
+  },
+  {
+    "id": "2",
+    "name": "Special Needs Child Care",
+    "slug": "special-needs-child-care",
+    "description": "We provide home-based care for children with special needs, helping them thrive through compassion, advocacy, and guidance. Many of these children face developmental delays, intellectual disabilities, or visual impairments, and we aim to support their development in positive ways.",
+    "image": "https://i.ibb.co.com/RkTRDvfs/special-needddd.webp",
+    "category": "Child Care",
+    "pricePerDay": 1500,
+    "pricePerHour": 180,
+    "features": [
+      "Specialized care for children with disabilities",
+      "Developmental support activities",
+      "Compassionate and trained caregivers",
+      "Personalized attention",
+      "Progress monitoring",
+      "Family support and guidance"
+    ],
+    "status": "active"
+  },
+  {
+    "id": "3",
+    "name": "Elderly Companion Care",
+    "slug": "elderly-companion-care",
+    "description": "Everyone has elderly people like parents, grandparents in their homes. They need care and attention at the end of their lives. Elderly members of our family are an important and integral part. Therefore, we have some responsibilities towards the elderly. That is why the demand for reliable elderly care in Bangladesh is increasing day by day.",
+    "image": "https://i.ibb.co.com/Z6PSs9L0/eldery-companion.jpg",
+    "category": "Elderly Care",
+    "pricePerDay": 1000,
+    "pricePerHour": 120,
+    "features": [
+      "Companionship and emotional support",
+      "Daily living assistance",
+      "Meal preparation",
+      "Medication reminders",
+      "Light housekeeping",
+      "Transportation assistance"
+    ],
+    "status": "active"
+  },
+  {
+    "id": "4",
+    "name": "Post-Operative Care",
+    "slug": "post-operative-care",
+    "description": "Our Post-Operative Patient Care service provides specialized support for individuals recovering after surgery. Our caregivers assist with wound care, pain management, medication administration, mobility support, and monitoring vital signs. This service promotes a safe and comfortable recovery at home, ensuring patients heal effectively under professional supervision.",
+    "image": "https://i.ibb.co.com/JRZXB0m5/Post-operative-care.jpg",
+    "category": "Medical Care",
+    "pricePerDay": 1800,
+    "pricePerHour": 220,
+    "features": [
+      "Post-surgery wound care",
+      "Pain management support",
+      "Medication administration",
+      "Mobility and physical therapy support",
+      "Vital signs monitoring",
+      "Professional medical supervision"
+    ],
+    "status": "active"
+  },
+  {
+    "id": "5",
+    "name": "Adults with Disabilities",
+    "slug": "adults-with-disabilities",
+    "description": "Our Adults with Disabilities service provides compassionate, personalized care to support daily living and promote independence. We assist with activities such as personal hygiene, mobility, medication management, and social engagement, ensuring a safe, empowering environment tailored to each individual's unique needs and enhancing their quality of life.",
+    "image": "https://i.ibb.co.com/JRXkcSw9/adult-with-disabilities.jpg",
+    "category": "Disability Care",
+    "pricePerDay": 1400,
+    "pricePerHour": 170,
+    "features": [
+      "Personal care assistance",
+      "Mobility support",
+      "Medication management",
+      "Social engagement activities",
+      "Daily living skills support",
+      "Empowering and respectful care"
+    ],
+    "status": "active"
+  },
+  {
+    "id": "6",
+    "name": "Baby Care Services",
+    "slug": "baby-care-services",
+    "description": "We offer professional Baby Care Service at Home, ensuring your little one receives expert care, comfort, and attention in a safe environment. Our trained caregivers assist with feeding, bathing, and sleep routines for a happy baby. We ensure a hygienic and nurturing atmosphere tailored to your baby's needs.",
+    "image": "https://i.ibb.co.com/Z6rBS2pT/baby-care.jpg",
+    "category": "Child Care",
+    "pricePerDay": 1300,
+    "pricePerHour": 160,
+    "features": [
+      "Experienced and trained caregivers",
+      "Feeding and nutrition support",
+      "Bath time and hygiene care",
+      "Sleep routine management",
+      "Interactive play and development",
+      "Safe and nurturing environment"
+    ],
+    "status": "active"
+  },
+  {
+    "id": "7",
+    "name": "Nanny Care Services",
+    "slug": "nanny-care-services",
+    "description": "We provide professional Nanny Care Service at Home, ensuring safe, nurturing, and personalized childcare for your little ones. Our trained nannies focus on your child's well-being, growth, and daily activities. We provide structured routines, playtime, and educational engagement. Safety and hygiene are our top priorities.",
+    "image": "https://i.ibb.co.com/b5R51JP9/nany-care.jpg",
+    "category": "Child Care",
+    "pricePerDay": 1100,
+    "pricePerHour": 140,
+    "features": [
+      "Experienced and caring nannies",
+      "Personalized childcare",
+      "Educational activities",
+      "Structured daily routines",
+      "Safety-focused care",
+      "Healthy meal preparation"
+    ],
+    "status": "active"
+  }
+]

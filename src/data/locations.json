@@ -1,0 +1,163 @@
+[
+  {
+    "division": "Dhaka",
+    "district": "Dhaka",
+    "city": "Dhaka",
+    "areas": ["Uttara", "Dhanmondi", "Mirpur", "Mohammadpur", "Gulshan", "Banani", "Motijheel"],
+    "status": "active"
+  },
+  {
+    "division": "Dhaka",
+    "district": "Faridpur",
+    "city": "Faridpur",
+    "areas": ["Goalanda", "Boalmari", "Bhanga"],
+    "status": "active"
+  },
+  {
+    "division": "Dhaka",
+    "district": "Gazipur",
+    "city": "Gazipur",
+    "areas": ["Tongi", "Kaliakair", "Sreepur"],
+    "status": "active"
+  },
+  {
+    "division": "Dhaka",
+    "district": "Gopalganj",
+    "city": "Gopalganj",
+    "areas": ["Tungipara", "Kotalipara", "Kashiani"],
+    "status": "active"
+  },
+  {
+    "division": "Dhaka",
+    "district": "Kishoreganj",
+    "city": "Kishoreganj",
+    "areas": ["Bajitpur", "Kuliarchar", "Pakundia"],
+    "status": "active"
+  },
+  {
+    "division": "Dhaka",
+    "district": "Madaripur",
+    "city": "Madaripur",
+    "areas": ["Rajoir", "Kalkini", "Shibchar"],
+    "status": "active"
+  },
+  {
+    "division": "Dhaka",
+    "district": "Manikganj",
+    "city": "Manikganj",
+    "areas": ["Saturia", "Shivalaya", "Ghior"],
+    "status": "active"
+  },
+  {
+    "division": "Dhaka",
+    "district": "Munshiganj",
+    "city": "Munshiganj",
+    "areas": ["Sreenagar", "Lohajang", "Sirajdikhan"],
+    "status": "active"
+  },
+  {
+    "division": "Dhaka",
+    "district": "Narayanganj",
+    "city": "Narayanganj",
+    "areas": ["Fatullah", "Siddhirganj", "Rupganj"],
+    "status": "active"
+  },
+  {
+    "division": "Dhaka",
+    "district": "Narsingdi",
+    "city": "Narsingdi",
+    "areas": ["Palash", "Belabo", "Raipura"],
+    "status": "active"
+  },
+  {
+    "division": "Dhaka",
+    "district": "Rajbari",
+    "city": "Rajbari",
+    "areas": ["Pangsha", "Kalukhali", "Baliakandi"],
+    "status": "active"
+  },
+  {
+    "division": "Dhaka",
+    "district": "Shariatpur",
+    "city": "Shariatpur",
+    "areas": ["Zajira", "Naria", "Gosairhat"],
+    "status": "active"
+  },
+  {
+    "division": "Dhaka",
+    "district": "Tangail",
+    "city": "Tangail",
+    "areas": ["Delduar", "Ghatail", "Kalihati"],
+    "status": "active"
+  },
+  {
+    "division": "Chattogram",
+    "district": "Chattogram",
+    "city": "Chattogram",
+    "areas": ["Agrabad", "Patenga", "Halishahar", "Chandgaon"],
+    "status": "active"
+  },
+  {
+    "division": "Chattogram",
+    "district": "Cox's Bazar",
+    "city": "Cox's Bazar",
+    "areas": ["Teknaf", "Ukhia", "Chakaria", "Ramu"],
+    "status": "active"
+  },
+  {
+    "division": "Chattogram",
+    "district": "Cumilla",
+    "city": "Cumilla",
+    "areas": ["Laksam", "Debidwar", "Chandina", "Muradnagar"],
+    "status": "active"
+  },
+  {
+    "division": "Chattogram",
+    "district": "Brahmanbaria",
+    "city": "Brahmanbaria",
+    "areas": ["Nabinagar", "Kasba", "Akhaura"],
+    "status": "active"
+  },
+  {
+    "division": "Sylhet",
+    "district": "Sylhet",
+    "city": "Sylhet",
+    "areas": ["Zindabazar", "Ambarkhana", "Dakshin Surma"],
+    "status": "active"
+  },
+  {
+    "division": "Rajshahi",
+    "district": "Rajshahi",
+    "city": "Rajshahi",
+    "areas": ["Shaheb Bazar", "Kazla", "Boalia"],
+    "status": "active"
+  },
+  {
+    "division": "Khulna",
+    "district": "Khulna",
+    "city": "Khulna",
+    "areas": ["Daulatpur", "Khalishpur", "Sonadanga"],
+    "status": "active"
+  },
+  {
+    "division": "Barisal",
+    "district": "Barisal",
+    "city": "Barisal",
+    "areas": ["Kotwali", "Nathullabad", "Charmonai"],
+    "status": "active"
+  },
+  {
+    "division": "Rangpur",
+    "district": "Rangpur",
+    "city": "Rangpur",
+    "areas": ["Mahiganj", "Tajhat", "Ganggachara"],
+    "status": "active"
+  },
+  {
+    "division": "Mymensingh",
+    "district": "Mymensingh",
+    "city": "Mymensingh",
+    "areas": ["Muktagacha", "Bhaluka", "Trishal"],
+    "status": "active"
+  }
+]
