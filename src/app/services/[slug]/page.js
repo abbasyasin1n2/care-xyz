@@ -43,6 +43,29 @@ export async function generateMetadata({ params }) {
   return {
     title: `${service.name} | Care.xyz - Professional Care Services`,
     description: service.description,
+    keywords: `${service.name}, ${service.category}, care services, Bangladesh, ${service.slug}`,
+    openGraph: {
+      title: `${service.name} - Care.xyz`,
+      description: service.description,
+      url: `https://carexyz.vercel.app/services/${service.slug}`,
+      siteName: 'Care.xyz',
+      images: [
+        {
+          url: service.image,
+          width: 1200,
+          height: 630,
+          alt: service.name,
+        },
+      ],
+      locale: 'en_US',
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${service.name} - Care.xyz`,
+      description: service.description,
+      images: [service.image],
+    },
   };
 }
 

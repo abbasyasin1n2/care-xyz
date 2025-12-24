@@ -9,6 +9,59 @@ import { Badge } from '@/components/ui/badge';
 import Link from 'next/link';
 import { FiUsers, FiAward, FiStar, FiTrendingUp, FiArrowRight } from 'react-icons/fi';
 
+export const metadata = {
+  title: 'Care.xyz - Professional Baby Sitting & Elderly Care Services in Bangladesh',
+  description: 'Find trusted and reliable care services for children, elderly, and special needs family members. Book professional caregivers across all 8 divisions of Bangladesh with flexible scheduling, affordable rates, and 24/7 availability. Verified caregivers for baby sitting, home nursing, elderly care, and disability support.',
+  keywords: 'baby sitting Bangladesh, elderly care services, home nursing, special needs care, professional caregivers, child care Dhaka, senior care, patient care at home, disability care, verified caregivers Bangladesh, 24/7 care services',
+  authors: [{ name: 'Care.xyz' }],
+  creator: 'Care.xyz',
+  publisher: 'Care.xyz',
+  metadataBase: new URL('https://carexyz.vercel.app'),
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title: 'Care.xyz - Professional Baby Sitting & Elderly Care Services in Bangladesh',
+    description: 'Trusted and verified care services for your loved ones. Professional caregivers available across all divisions of Bangladesh. Baby sitting, elderly care, home nursing, and special needs support with flexible scheduling and affordable rates.',
+    url: 'https://carexyz.vercel.app',
+    siteName: 'Care.xyz',
+    images: [
+      {
+        url: 'https://i.ibb.co.com/7dyMfvwb/Screenshot-2025-12-24-142349.png',
+        width: 1200,
+        height: 630,
+        alt: 'Care.xyz - Professional Baby Sitting & Elderly Care Services in Bangladesh',
+        type: 'image/png',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Care.xyz - Professional Care Services in Bangladesh',
+    description: 'Trusted care services for children, elderly & special needs. Verified caregivers across Bangladesh with 24/7 availability.',
+    images: ['https://i.ibb.co.com/7dyMfvwb/Screenshot-2025-12-24-142349.png'],
+    creator: '@carexyz',
+    site: '@carexyz',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  verification: {
+    google: 'YOUR_GOOGLE_VERIFICATION_CODE',
+    yandex: 'YOUR_YANDEX_VERIFICATION_CODE',
+  },
+};
+
 async function getServices() {
   try {
     const res = await fetch(`${process.env.NEXT_PUBLIC_SITE_URL}/api/services`, {

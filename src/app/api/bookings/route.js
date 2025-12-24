@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import { getServerSession } from 'next-auth';
 import { getBookingsCollection } from '@/lib/mongodb';
+import { sendBookingInvoice } from '@/lib/email';
 
 // GET user's bookings
 export async function GET(request) {
@@ -86,6 +87,20 @@ export async function POST(request) {
     };
 
     const result = await bookingsCollection.insertOne(newBooking);
+
+    const createdBooking = {
+      _id: result.insertedId,
+      ...newBooking
+    };
+
+    // Send email invoice
+    try {
+      await sendBookingInvoice(createdBooking, session.user.email, session.user.name);
+      console.log('Booking invoice sent successfully to:', session.user.email);
+    } catch (emailError) {
+      console.error('Error sending booking invoice:', emailError);
+      // Don't fail the booking if email fails
+    }
 
     return NextResponse.json({
       success: true,

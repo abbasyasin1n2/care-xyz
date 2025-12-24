@@ -5,8 +5,52 @@ import { Badge } from '@/components/ui/badge';
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from '@/components/ui/breadcrumb';
 
 export const metadata = {
-  title: 'Our Services | Care.xyz - Professional Care Services in Bangladesh',
-  description: 'Browse our comprehensive range of professional care services including baby care, elderly care, nursing care, and special needs support across Bangladesh.',
+  title: 'Our Services | Care.xyz - Professional Baby Sitting & Elderly Care Services',
+  description: 'Browse our comprehensive range of professional care services including baby sitting, elderly care, home nursing, special needs support, and more. Trusted caregivers available across all 8 divisions of Bangladesh with flexible scheduling and affordable rates.',
+  keywords: 'care services Bangladesh, baby sitting services, elderly care, home nursing, special needs care, professional caregivers, child care services, senior care, patient care, disability care, Dhaka care services',
+  authors: [{ name: 'Care.xyz' }],
+  creator: 'Care.xyz',
+  publisher: 'Care.xyz',
+  openGraph: {
+    title: 'Our Services - Professional Care Solutions Across Bangladesh | Care.xyz',
+    description: 'Explore our full range of trusted care services: Baby sitting, elderly care, home nursing, and special needs support. Professional caregivers available in all 8 divisions with 24/7 availability.',
+    url: 'https://carexyz.vercel.app/services',
+    siteName: 'Care.xyz',
+    images: [
+      {
+        url: 'https://i.ibb.co.com/pB1m8H71/Screenshot-2025-12-24-142440.png',
+        width: 1200,
+        height: 630,
+        alt: 'Care.xyz Professional Care Services - Baby Sitting, Elderly Care, Home Nursing',
+        type: 'image/png',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Our Services - Professional Care Solutions | Care.xyz',
+    description: 'Professional care services including baby sitting, elderly care, home nursing & special needs support across Bangladesh.',
+    images: ['https://i.ibb.co.com/pB1m8H71/Screenshot-2025-12-24-142440.png'],
+    creator: '@carexyz',
+    site: '@carexyz',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  verification: {
+    google: 'YOUR_GOOGLE_VERIFICATION_CODE',
+    yandex: 'YOUR_YANDEX_VERIFICATION_CODE',
+  },
 };
 
 async function getServices() {

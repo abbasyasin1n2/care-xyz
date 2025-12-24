@@ -15,6 +15,11 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Care.xyz - Baby Sitting & Elderly Care Service",
   description: "Reliable and trusted care services for children, elderly, and other family members in Bangladesh",
+  icons: {
+    icon: 'https://i.ibb.co.com/8gs1VMjc/Screenshot-2025-12-24-142240.png',
+    shortcut: 'https://i.ibb.co.com/8gs1VMjc/Screenshot-2025-12-24-142240.png',
+    apple: 'https://i.ibb.co.com/8gs1VMjc/Screenshot-2025-12-24-142240.png',
+  },
 };
 
 export default function RootLayout({ children }) {
