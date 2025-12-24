@@ -14,7 +14,7 @@ export const metadata = {
   openGraph: {
     title: 'Our Services - Professional Care Solutions Across Bangladesh | Care.xyz',
     description: 'Explore our full range of trusted care services: Baby sitting, elderly care, home nursing, and special needs support. Professional caregivers available in all 8 divisions with 24/7 availability.',
-    url: 'https://carexyz.vercel.app/services',
+    url: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://carexyz.vercel.app'}/services`,
     siteName: 'Care.xyz',
     images: [
       {

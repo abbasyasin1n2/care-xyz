@@ -16,14 +16,14 @@ export const metadata = {
   authors: [{ name: 'Care.xyz' }],
   creator: 'Care.xyz',
   publisher: 'Care.xyz',
-  metadataBase: new URL('https://carexyz.vercel.app'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     title: 'Care.xyz - Professional Baby Sitting & Elderly Care Services in Bangladesh',
     description: 'Trusted and verified care services for your loved ones. Professional caregivers available across all divisions of Bangladesh. Baby sitting, elderly care, home nursing, and special needs support with flexible scheduling and affordable rates.',
-    url: 'https://carexyz.vercel.app',
+    url: process.env.NEXT_PUBLIC_SITE_URL || 'https://carexyz.vercel.app',
     siteName: 'Care.xyz',
     images: [
       {

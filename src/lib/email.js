@@ -236,7 +236,7 @@ function generateInvoiceHTML(booking, userName) {
         </div>
 
         <div style="text-align: center;">
-          <a href="${process.env.NEXTAUTH_URL}/my-bookings" class="button">View My Bookings</a>
+          <a href="${process.env.NEXT_PUBLIC_SITE_URL || process.env.NEXTAUTH_URL}/my-bookings" class="button">View My Bookings</a>
         </div>
 
         <div style="background: #fef3c7; padding: 15px; border-radius: 8px; margin-top: 20px;">
@@ -249,7 +249,7 @@ function generateInvoiceHTML(booking, userName) {
       <div class="footer">
         <p><strong>Care.xyz</strong> - Professional Care Services</p>
         <p>📧 Email: ${process.env.EMAIL_USER}</p>
-        <p>🌐 Website: ${process.env.NEXTAUTH_URL}</p>
+        <p>🌐 Website: ${process.env.NEXT_PUBLIC_SITE_URL || process.env.NEXTAUTH_URL}</p>
         <p style="margin-top: 15px; font-size: 12px;">
           This is an automated email. Please do not reply to this message.
         </p>
