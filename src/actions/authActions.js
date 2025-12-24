@@ -73,11 +73,15 @@ export async function registerUser(formData) {
 export async function checkEmailExists(email) {
   try {
     const usersCollection = await getUsersCollection();
-    const user = await usersCollection.findOne({ email });
-    return { exists: !!user };
+    // Only check for users registered with credentials (not OAuth)
+    const user = await usersCollection.findOne({ 
+      email,
+      password: { $exists: true } // Only users with password field
+    });
+    return !!user;
   } catch (error) {
     console.error('Check email error:', error);
-    return { exists: false };
+    return false;
   }
 }
 

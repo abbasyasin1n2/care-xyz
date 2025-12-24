@@ -30,7 +30,8 @@ export default function BookingForm({ service, user }) {
 
   const calculateCost = () => {
     const price = formData.durationType === 'days' ? service.pricePerDay : service.pricePerHour;
-    return price * formData.duration;
+    const validDuration = formData.duration === '' || formData.duration < 1 ? 1 : formData.duration;
+    return price * validDuration;
   };
 
   const handleSubmit = async (e) => {
@@ -56,7 +57,7 @@ export default function BookingForm({ service, user }) {
       return;
     }
 
-    if (formData.duration < 1) {
+    if (formData.duration === '' || formData.duration < 1) {
       Swal.fire({
         icon: 'warning',
         title: 'Invalid Duration',

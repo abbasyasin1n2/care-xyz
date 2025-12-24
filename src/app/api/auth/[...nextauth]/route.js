@@ -97,6 +97,13 @@ export const authOptions = {
         session.user.nid = token.nid;
         session.user.contact = token.contact;
         session.user.photoURL = token.photoURL;
+        // Ensure image is available (NextAuth uses 'image' for OAuth providers)
+        if (!session.user.image && token.picture) {
+          session.user.image = token.picture;
+        }
+        if (!session.user.image && token.photoURL) {
+          session.user.image = token.photoURL;
+        }
       }
       return session;
     }

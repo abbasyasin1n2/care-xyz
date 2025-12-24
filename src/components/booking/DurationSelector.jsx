@@ -6,6 +6,27 @@ import { ToggleGroup, ToggleGroupItem } from '@/components/ui/toggle-group';
 import { FiClock, FiCalendar } from 'react-icons/fi';
 
 export default function DurationSelector({ durationType, duration, onDurationTypeChange, onDurationChange }) {
+  const handleChange = (e) => {
+    const value = e.target.value;
+    // Allow empty string temporarily while typing
+    if (value === '') {
+      onDurationChange('');
+      return;
+    }
+    const numValue = parseInt(value);
+    if (!isNaN(numValue) && numValue >= 0) {
+      onDurationChange(numValue);
+    }
+  };
+
+  const handleBlur = (e) => {
+    // If empty or invalid, reset to 1
+    const value = e.target.value;
+    if (value === '' || parseInt(value) < 1) {
+      onDurationChange(1);
+    }
+  };
+
   return (
     <div className="space-y-4">
       <div>
@@ -37,7 +58,8 @@ export default function DurationSelector({ durationType, duration, onDurationTyp
           min="1"
           max={durationType === 'days' ? 365 : 24}
           value={duration}
-          onChange={(e) => onDurationChange(parseInt(e.target.value) || 1)}
+          onChange={handleChange}
+          onBlur={handleBlur}
           placeholder={durationType === 'days' ? 'Enter number of days' : 'Enter number of hours'}
           className="text-lg"
         />
