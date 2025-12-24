@@ -2,19 +2,34 @@
 export function validatePassword(password) {
   const errors = [];
   
-  if (password.length < 6) {
-    errors.push('Password must be at least 6 characters');
+  if (password.length < 8) {
+    return {
+      isValid: false,
+      error: 'Password must be at least 8 characters'
+    };
   }
   if (!/[A-Z]/.test(password)) {
-    errors.push('Password must contain at least one uppercase letter');
+    return {
+      isValid: false,
+      error: 'Password must contain at least one uppercase letter'
+    };
   }
   if (!/[a-z]/.test(password)) {
-    errors.push('Password must contain at least one lowercase letter');
+    return {
+      isValid: false,
+      error: 'Password must contain at least one lowercase letter'
+    };
+  }
+  if (!/[0-9]/.test(password)) {
+    return {
+      isValid: false,
+      error: 'Password must contain at least one number'
+    };
   }
   
   return {
-    isValid: errors.length === 0,
-    errors
+    isValid: true,
+    error: null
   };
 }
 
@@ -27,13 +42,29 @@ export function validateEmail(email) {
 // NID validation (Bangladesh NID is 10, 13, or 17 digits)
 export function validateNID(nid) {
   const nidRegex = /^(\d{10}|\d{13}|\d{17})$/;
-  return nidRegex.test(nid);
+  const isValid = nidRegex.test(nid);
+  
+  return {
+    isValid,
+    error: isValid ? null : 'NID must be 10, 13, or 17 digits'
+  };
 }
 
 // Phone validation (Bangladesh format)
 export function validatePhone(phone) {
   const phoneRegex = /^(\+?880|0)?1[3-9]\d{8}$/;
   return phoneRegex.test(phone.replace(/\s/g, ''));
+}
+
+// Phone validation with error message
+export function validatePhoneNumber(phone) {
+  const phoneRegex = /^(\+?880|0)?1[3-9]\d{8}$/;
+  const isValid = phoneRegex.test(phone.replace(/\s/g, ''));
+  
+  return {
+    isValid,
+    error: isValid ? null : 'Invalid Bangladesh phone number (e.g., 01XXXXXXXXX)'
+  };
 }
 
 // Registration form validation

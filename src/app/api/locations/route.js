@@ -14,7 +14,7 @@ export async function GET(request) {
       const divisions = await divisionsCollection.find({}).toArray();
       return NextResponse.json({ 
         success: true, 
-        divisions: divisions.map(d => d.name) 
+        data: divisions.map(d => d.name) 
       });
     }
 
@@ -26,7 +26,7 @@ export async function GET(request) {
         .project({ district: 1, _id: 0 })
         .toArray();
       const uniqueDistricts = [...new Set(districts.map(d => d.district))];
-      return NextResponse.json({ success: true, districts: uniqueDistricts });
+      return NextResponse.json({ success: true, data: uniqueDistricts });
     }
 
     if (type === 'cities' && division && district) {
@@ -35,14 +35,14 @@ export async function GET(request) {
         .project({ city: 1, _id: 0 })
         .toArray();
       const uniqueCities = [...new Set(cities.map(c => c.city))];
-      return NextResponse.json({ success: true, cities: uniqueCities });
+      return NextResponse.json({ success: true, data: uniqueCities });
     }
 
     if (type === 'areas' && division && district) {
       const location = await locationsCollection.findOne({ division, district });
       return NextResponse.json({ 
         success: true, 
-        areas: location?.areas || [] 
+        data: location?.areas || [] 
       });
     }
 
